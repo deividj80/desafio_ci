@@ -2,7 +2,7 @@ steps:
 
   - id: "Running GO TEST"
     name: 'gcr.io/$PROJECT_ID/docker-compose:1.25.5'
-    args: ['-f','docker-compose.yaml','run','app','go','env']
+    args: ['-f','docker-compose.yaml','run','app','go','test']
 
   - id: "Send image Google Container Registry"
     name: 'gcr.io/cloud-builders/docker'
