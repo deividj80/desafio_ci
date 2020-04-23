@@ -2,15 +2,14 @@ package main
 
 import "testing"
 
-func TestSum( t  *testing.T) {
+func TestSum(t *testing.T) {
 
-	result := sum(5,5)
+	result := sum(5, 5)
 
-	if result == 10{
+	if result == 10 {
 		t.Logf("sum(5,5) sucesso")
-	}else {
+	} else {
 		t.Errorf("sum(5,5) erro")
-
 	}
 
 }
